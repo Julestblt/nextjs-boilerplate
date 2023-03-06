@@ -25,6 +25,7 @@ const Weather = () => {
               <p>Description: {weather.weather[0].description}</p>
             </div>
         )}
+          <p>Env var : {process.env.OPEN_WEATHER_MAP_API_KEY || "Pas accessible côté client"}</p>
       </div>
   );
 };
